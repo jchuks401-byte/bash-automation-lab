@@ -1,4 +1,13 @@
 #!/bin/bash
+echo "System Information"
+echo "------------------"
+
+echo "Username: $USER"
+echo "Current directory: $(pwd)"
+echo "Date: $(date)"
+
+echo ""
+
 echo "Enter your age:"
 read age
 
@@ -8,3 +17,11 @@ then
 else
   echo "You are a minor"
 fi
+
+echo ""
+echo "System Uptime:"
+Uptime 
+
+echo ""
+echo "DIsk Usage"
+df -h 
